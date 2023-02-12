@@ -1,0 +1,24 @@
+{% extends 'newsite/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Удаление статьи{% endblock title %}
+
+{% block content %}
+    <div class="features">
+        <h1>Удаление статьи</h1>
+
+        <form action="" method="post">
+            {% csrf_token %}
+{#            {{ form|crispy }}#}
+
+{#            {{ form.as_p }}#}
+{#            {{ form.title }}#}
+{#            {{ form.anons }}#}
+{#            {{ form.full_text }}#}
+{#            {{ form.date }}#}
+{#            <input type="text" placeholder="Название статьи">#}
+{#            <input type="text" placeholder="Анонс статьи">#}
+            <button>Удалить статью</button>
+        </form>
+    </div>
+{% endblock content %}

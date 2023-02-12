@@ -1,0 +1,29 @@
+{% extends 'newsite/base.html' %}
+
+{% block title %}{{ title }}{% endblock title %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        {% filter upper %}
+        <button>На страницу про нас</button>
+        {% endfilter %}
+
+        {% for value in values %}
+            {% if value == 'hello' %}
+
+            <p>{{ value|upper }}</p>
+
+            {% endif %}
+        {% endfor %}
+
+        {{ obj.car }}
+
+        {% for ob in obj %}
+            <p>{{ ob }}</p>
+        {% endfor %}
+    </div>
+
+
+{% endblock content %}
+
