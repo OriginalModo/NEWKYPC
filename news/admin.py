@@ -12,6 +12,7 @@ class ArticleAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     list_editable = ('date',)
     # paginator = 5
+    # paginator = 5
 
 
 
